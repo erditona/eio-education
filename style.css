@@ -1,0 +1,132 @@
+/* Your custom CSS styles */
+body {
+  background-image: url("image/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Additional styles for the title image container */
+.center-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* CSS Styles untuk Bulan-1 hingga Bulan-8 */
+.tombol {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: width 0.3s, height 0.3s;
+  position: absolute;
+}
+
+.bulans-container {
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  margin: 50px auto;
+}
+
+/* Set the larger size for each Bulan element */
+.tombol.bulan {
+  width: 300px;
+  height: 240px;
+}
+
+/* Position the Bulan elements to form the letter "U" */
+#bulan-1 {
+  background-image: url("image/bulan-8.png");
+  top: 40%;
+  left: 7%;
+}
+
+#bulan-2 {
+  background-image: url("image/bulan-7.png");
+  top: 45%;
+  left: 22%;
+}
+
+#bulan-3 {
+  background-image: url("image/bulan-5.png");
+  top: 50%;
+  left: 37%;
+}
+
+#bulan-4 {
+  background-image: url("image/bulan-2.png");
+  top: 55%;
+  left: 52%;
+}
+
+#bulan-5 {
+  background-image: url("image/bulan-1.png");
+  top: 55%;
+  left: 67%;
+}
+
+#bulan-6 {
+  background-image: url("image/bulan-2.png");
+  top: 50%;
+  left: 82%;
+  transform: scaleX(-1);
+}
+
+#bulan-7 {
+  background-image: url("image/bulan-5.png");
+  top: 45%;
+  left: 97%;
+  transform: scaleX(-1);
+}
+
+#bulan-8 {
+  background-image: url("image/bulan-7.png");
+  top: 40%;
+  left: 112%;
+  transform: scaleX(-1);
+}
+
+/* Efek perbesaran saat kursor diarahkan pada gambar bulan */
+.tombol.bulan:hover {
+  width: 320px;
+  height: 260px;
+  z-index: 1;
+}
+
+/* Vertically center the card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+.card-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+li a {
+  color: #191970; /* Midnight Blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  text-decoration: underline;
+}

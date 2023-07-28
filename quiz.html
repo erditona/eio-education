@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fase Waxing Gibbous</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-trasparent bottom">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="info.html">Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <audio controls autoplay style="display: none">
+      <source src="audio/bgMusik.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <main>
+      <section id="quiz" class="container">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Quiz 8 Fase Bulan dan Gerhana</h2>
+            <p class="card-text">Silakan jawab pertanyaan-pertanyaan berikut untuk menguji pemahaman Anda:</p>
+            <form id="quiz-form">
+              <ol>
+                <li class="mb-3">
+                  <span class="question">Apasaja 3 Fase Pertama dalam bulan dan gerhana?</span><br />
+                  <input type="radio" name="q1" value="a" /> a) New Moon, Waxing Cresent, First Quarter<br />
+                  <input type="radio" name="q1" value="b" /> b) Waxing Cresent, New Moon, First Quarter<br />
+                  <input type="radio" name="q1" value="c" /> c) New Moon, Waxing Cresent, New Moon<br />
+                </li>
+                <li class="mb-3">
+                  <span class="question">Setelah Fase Waxing Gibbous adalah fase?</span><br />
+                  <input type="radio" name="q2" value="a" /> a) Waxing Cresent<br />
+                  <input type="radio" name="q2" value="b" /> b) New Moon<br />
+                  <input type="radio" name="q2" value="c" /> c) First Quarter<br />
+                </li>
+                <li>
+                  <span class="question">Fase di mana matahari, bumi, dan bulan, berada pada satu garis lurus. Ini merupakan pengertian dari fase?</span><br />
+                  <input type="radio" name="q3" value="a" /> a) Waxing Cresent<br />
+                  <input type="radio" name="q3" value="b" /> b) New Moon<br />
+                  <input type="radio" name="q3" value="c" /> c) Full Moon<br />
+                </li>
+              </ol>
+              <input type="submit" value="Selesai" class="btn btn-primary mt-3" />
+            </form>
+            <div id="result" class="mt-3"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
